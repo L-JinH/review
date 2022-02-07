@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+body {
+  background-color: lightslategray;
+}
+
+.cursor {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(94, 215, 245, 0.507);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  user-select: none;
+  pointer-events: none;
+  transition: transform 0.3s, opacity 0.2s;
+}
+
+.cursor.active {
+  background-color: crimson;
+  opacity: 0.5;
+  transform: scale(10);
+}
+
+p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  text-align: center;
+  color: #fff;
+}
+
+p span {
+  color: gold;
+}
+
+ul {
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  color: #fff;
+}
